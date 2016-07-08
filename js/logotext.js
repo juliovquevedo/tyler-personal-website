@@ -18,6 +18,11 @@ function setGithub() {
   text.innerHTML = "Github Profile";
 }
 
+function setPortfolio() {
+  var text = document.getElementById("hoverText");
+  text.innerHTML = "Web Portfolio";
+}
+
 var resume = document.getElementById("logo-box-1");
 resume.onmouseenter = setResume;
 resume.onmouseleave = reset;
@@ -28,4 +33,8 @@ linkedin.onmouseleave = reset;
 
 var github = document.getElementById("logo-box-3");
 github.onmouseenter = setGithub;
+github.onmouseleave = reset;
+
+var github = document.getElementById("logo-box-4");
+github.onmouseenter = setPortfolio;
 github.onmouseleave = reset;
